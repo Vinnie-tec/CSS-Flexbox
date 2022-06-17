@@ -1,6 +1,7 @@
 # An internship task
 
-## CSS Flexbox
+## CSS FLEXBOX AND CSS GRID
 
-![Desktop View](./IMG/Desktop.png)
-![Mobile View](./IMG/Mobile.png)
+![Flex Desktop View](./IMG/FlexDesktop.png)
+![Flex Mobile View](./IMG/FlexMobile.png)
+![Grid Desktop View](./IMG/GridDesktop.png)

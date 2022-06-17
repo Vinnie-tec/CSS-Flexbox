@@ -6,12 +6,44 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: 'Lexend Deca', sans-serif;
-  /* font-family: 'Big Shoulders Display', cursive; */
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
 }
 
-main {
+.list-Header ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-transform: uppercase;
+  list-style-type: none;
+  border-bottom: 1px solid hsla(240, 90%, 8%, .1);
+  padding: 2% 10%;
+  padding-bottom: 1rem;
+  background-color: #fff;
+}
+
+.list-Header ul li {
+  font-family: 'Big Shoulders Display', cursive;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.list-Header ul li.active {
+  box-shadow: 0px -5px 10px 0px rgba(7, 7, 7, 0.5);
+  color: rgb(32, 155, 118);
+}
+
+.list-Header ul li:hover {
+  opacity: .7;
+}
+
+#flexMain {
+  font-family: 'Lexend Deca', sans-serif;
+  background: hsl(0, 0%, 95%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -75,10 +107,11 @@ p {
 }
 
 @media (max-width: 600px) {
-  main {
+  #flexMain {
     margin-left: .5rem;
     margin-right: .5rem;
   }
+
   .card p {
     margin: 0;
     padding-bottom: 2rem;
@@ -88,7 +121,7 @@ p {
 }
 
 @media (max-width: 375px) {
-  main {
+  #flexMain {
     flex-direction: column;
     height: 120vh;
   }
@@ -104,4 +137,65 @@ p {
   .luxury {
     border-radius: 0 0 .5rem .5rem;
   }
+}
+
+
+
+/* GRID PAGES */
+#gridMain {
+  background: hsla(0, 0%, 0%, 0.93);
+}
+
+.wrapper {
+  font-family: 'Big Shoulders Display', cursive;
+  margin: 10% 25%;
+  display: grid;
+  grid-gap: .5rem;
+  grid-template-columns: 100px 100px 100px;
+}
+
+.box {
+  padding: 30px;
+}
+
+.a {
+  grid-column: 1 / 3;
+  grid-row: 1;
+  padding: 50px;
+  background: hsl(25, 100%, 52%)
+}
+
+.b {
+  grid-column: 3;
+  grid-row: 1 / 2;
+  padding: 50px;
+  background: hsl(48, 100%, 51%)
+}
+
+.c {
+  grid-column: 1 / 2;
+  grid-row: 2 / 4;
+  width: 11rem;
+  background: hsl(160, 68%, 42%)
+}
+
+.d {
+  grid-column: 2 / 4;
+  grid-row: 2;
+  margin-left: 3.8rem;
+  background: hsl(203, 100%, 60%);
+}
+
+.e {
+  grid-column: 2 / 4;
+  grid-row: 3;
+  margin-left: 3.8rem;
+  background: hsl(203, 100%, 60%);
+}
+
+footer p {
+  display: flex;
+  justify-content: center;
+  color: rgb(32, 155, 118);
+  text-shadow: 1px 1px 2px black, 0 0 25px rgb(255, 89, 0), 0 0 5px darkblue;
 }

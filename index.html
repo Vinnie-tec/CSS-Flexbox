@@ -8,18 +8,30 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
     <title>CSS Flexbox</title>
   </head>
   <body>
-    <main>
+    <header>
+      <nav class="list-Header">
+        <ul>
+          <li class="active">
+            <a href="index.html" target="_blank" rel="noopener noreferrer"
+              >Flex Page</a
+            >
+          </li>
+          <li>
+            <a href="grid.html" target="_blank" rel="noopener noreferrer"
+              >Grid page</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main id="flexMain">
       <div class="card Sedans">
         <div>
           <img src="./IMG/icon-sedans.svg" alt="svg" />
@@ -61,7 +73,9 @@
           <button>Learn More</button>
         </div>
       </div>
-      
     </main>
+    <footer>
+      <p>coded by Vinnie-tec</p>
+    </footer>
   </body>
 </html>
