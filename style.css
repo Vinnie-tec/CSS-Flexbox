@@ -1,0 +1,107 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lexend Deca', sans-serif;
+  /* font-family: 'Big Shoulders Display', cursive; */
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80% 80%;
+  margin: 15% 5rem;
+  height: 25rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 2rem 0 2rem;
+  width: 50%;
+  height: 100%;
+}
+
+.card img {
+  width: 20%;
+  aspect-ratio: 1;
+  margin-bottom: 2rem;
+}
+
+.card h2,
+p {
+  color: #fff;
+  width: 90%;
+}
+
+.card p {
+  margin: 2rem 0 3rem 0;
+  font-size: .6rem;
+  opacity: .8;
+}
+
+.card button {
+  padding: .8rem 1rem;
+  width: 80%;
+  border: none;
+  border-radius: 4rem;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.Sedans {
+  background-color: hsl(31, 77%, 52%);
+  border-radius: .5rem 0 0 .5rem;
+}
+
+.suvs {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0 .5rem .5rem 0;
+}
+
+@media (max-width: 600px) {
+  main {
+    margin-left: .5rem;
+    margin-right: .5rem;
+  }
+  .card p {
+    margin: 0;
+    padding-bottom: 2rem;
+    font-size: .5rem;
+    opacity: .8;
+  }
+}
+
+@media (max-width: 375px) {
+  main {
+    flex-direction: column;
+    height: 120vh;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  .Sedans {
+    border-radius: .5rem .5rem 0 0;
+  }
+
+  .luxury {
+    border-radius: 0 0 .5rem .5rem;
+  }
+}
