@@ -182,14 +182,14 @@ p {
 .d {
   grid-column: 2 / 4;
   grid-row: 2;
-  margin-left: 3.8rem;
+  margin-left: 4.7rem;
   background: hsl(203, 100%, 60%);
 }
 
 .e {
   grid-column: 2 / 4;
   grid-row: 3;
-  margin-left: 3.8rem;
+  margin-left: 4.7rem;
   background: hsl(203, 100%, 60%);
 }
 
